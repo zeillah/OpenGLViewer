@@ -55,7 +55,7 @@ void Axes::bindBuffers()
     vertexColorBuffer.bind();
     vertexColorBuffer.allocate(vertexColors, 18 * sizeof(float));
 
-    ushort indices[] = {0,1,2,3,4,5,6};
+    ushort indices[] = {0,3,6,9,12,15};
 
     indexBuffer.bind();
     indexBuffer.allocate(indices, 6*sizeof(ushort));
@@ -72,5 +72,6 @@ void Axes::draw(QOpenGLShaderProgram *program) {
 	program->setAttributeBuffer("aColor", GL_FLOAT, 0, 3);
 
     indexBuffer.bind();
-    glDrawElements(GL_LINES, 6, GL_UNSIGNED_SHORT, 0);
+    //glDrawElements(GL_LINES, 6, GL_UNSIGNED_SHORT, (GLvoid*)(sizeof(GLuint)));
+    glDrawArrays(GL_LINES, 0, 18);
 }

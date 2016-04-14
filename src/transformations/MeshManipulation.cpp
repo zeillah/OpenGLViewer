@@ -35,8 +35,8 @@ std::vector<QVector3D> MeshManipulation::paint(Mesh &mesh)
 
 Mesh MeshManipulation::smooth(Mesh &mesh, int iterations)
 {
-    //return MeshManipulation::smooth_valence(mesh, iterations);
-    //return MeshManipulation::smooth_length(mesh, iterations);
+    //return MeshManipulation::smoothValence(mesh, iterations);
+    //return MeshManipulation::smoothLength(mesh, iterations);
     return MeshManipulation::smoothOpenMesh(mesh, iterations);
 }
 

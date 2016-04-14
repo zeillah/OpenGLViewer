@@ -22,6 +22,7 @@ QVector3D Arcball::projectOnSphere(int x, int y)
                                      1.0f * y/h*2 - 1.0f,
                                      0);
 
+    touchPoint[1] *= -1;
     float pSqared = touchPoint.x() * touchPoint.x() + touchPoint.y() * touchPoint.y();
     if (pSqared <= arcballRadius*arcballRadius) {
         touchPoint[2] = sqrtf(arcballRadius*arcballRadius - pSqared);  // pythagore

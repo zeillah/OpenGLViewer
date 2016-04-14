@@ -35,9 +35,7 @@ void GLViewController::mousePressEvent(QMouseEvent *e)
 
     if(e->button() == Qt::RightButton) {
         doTranslation = true;
-        startP = QVector3D(1.0f * e->x()/width*2 - 1.0f,
-                                    1.0f * e->y()/height*2 - 1.0f,
-                                            0);
+        startP = QVector3D(e->x(), e->y(), 0);
     }
 }
 
@@ -65,11 +63,9 @@ void GLViewController::mouseMoveEvent(QMouseEvent *e)
     }
 
     if(e->buttons() == Qt::RightButton) {
-        QVector3D point = QVector3D(1.0f * e->x()/width*2 - 1.0f,
-                                    1.0f * e->y()/height*2 - 1.0f,
-                                    0);
-        double x = startP.x() - point.x();
-        double y = startP.y() - point.y();
+        QVector3D point = QVector3D(e->x(), e->y(), 0);
+        double x = (point.x() - startP.x())     /width*2;//;
+        double y = (point.y() - startP.y()) *-1 /height*2;// - startP.y();
 
         currentTranslation = QMatrix4x4(
                 1, 0, 0, x,

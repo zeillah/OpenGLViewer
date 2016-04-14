@@ -12,7 +12,8 @@ Scene::Scene(int width, int height, const QString &modelPath, QOpenGLShaderProgr
     vertexcolorProgram = vcp;
     modelProgram = mp;
 
-    camera = new Camera(width, height, QVector3D(0, 0, -2.5), QVector3D(0, 0, 1), QVector3D(0, 1, 0));
+    //camera = new Camera(width, height, QVector3D(0, 0, -2.5), QVector3D(0, 0, 1), QVector3D(0, 1, 0));
+    camera = new Camera(width, height, QVector3D(0, 0, 2.5), QVector3D(0, 0, 0), QVector3D(0, 1, 0));
     lightSources.push_back(Light( QVector3D(0.5, 0.0, 0.0),  QVector4D(1.0, 1.0, 1.0, 1.0), 0.1, 0.2) );
     lightSources.push_back(Light( QVector3D(0.0, -0.5, 0.0),  QVector4D(1.0, 1.0, 1.0, 1.0), 0.1, 0.2) );
     lightSources.push_back(Light( QVector3D(0.0, 0.0, 0.3),  QVector4D(1.0, 1.0, 1.0, 1.0), 0.1, 0.2) );
@@ -69,7 +70,7 @@ void Scene::renderAxes()
 {
     glEnable(GL_DEPTH_TEST);
 
-    QMatrix4x4 modelViewProjection = camera->projection * (camera->lookAtMat);
+    QMatrix4x4 modelViewProjection = camera->projection * camera->lookAtMat * currentTranslation * currentRotation;
 
     vertexcolorProgram->bind();
     vertexcolorProgram->setUniformValue("uMVPMatrix", modelViewProjection);
