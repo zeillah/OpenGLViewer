@@ -34,12 +34,12 @@ QVector3D Arcball::projectOnSphere(int x, int y)
 void Arcball::startRotation(int x, int y, const QVector3D &center)
 {
     this->center = center;
-    startP = projectOnSphere(x, y).normalized();
+    startP = projectOnSphere(x, y);
 }
 
 QQuaternion Arcball::updateRotation(int x, int y)
 {
-    moveP = projectOnSphere(x, y).normalized();
+    moveP = projectOnSphere(x, y);
     angle = qRadiansToDegrees( acosf(min(1.0f, QVector3D::dotProduct(startP , moveP))) );
     axis = QVector3D::crossProduct(startP, moveP);
     axis.normalize();
