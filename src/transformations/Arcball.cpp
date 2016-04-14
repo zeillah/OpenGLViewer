@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 26.04.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 26.04.15
+ */
 
 #include "Arcball.h"
 

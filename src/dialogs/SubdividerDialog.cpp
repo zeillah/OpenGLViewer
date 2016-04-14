@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 27.06.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 27.06.2015
+ */
 
 #include "SubdividerDialog.h"
 

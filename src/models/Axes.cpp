@@ -1,10 +1,7 @@
 /**
- *  \author    : Marc Lieser, Henning Tjaden
+ *  \author    : zeillah
  *  \version   : 1.0
- *  \date      : 09.10.2014
- *  \copyright : Copyright (c)
- *               Computer Vision & Mixed Reality Group,
- *               Hochschule RheinMain University of Applied Sciences
+ *  \date      : 13.04.2016
  */
 
 #include "Axes.h"

@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 22.06.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 22.06.2015
+ */
 
 #include "DecimationDialog.h"
 

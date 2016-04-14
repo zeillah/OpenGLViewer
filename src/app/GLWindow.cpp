@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 13.04.16.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 13.04.2016
+ */
 
 #include "GLWindow.h"
 

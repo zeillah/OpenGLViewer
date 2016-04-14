@@ -1,7 +1,7 @@
 /**
- *  \author    : Nicole Schmelzer
- *  \version   : 2.0
- *  \date      : 13.04.16
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 13.04.2016
  */
 
 #ifndef MODEL_H

@@ -1,5 +1,5 @@
 /**
- *  \author    : Nicole Schmelzer
+ *  \author    : zeillah
  *  \version   : 1.0
  *  \date      : 29.04.15
  */

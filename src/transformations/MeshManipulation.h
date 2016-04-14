@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 16.06.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 16.06.15
+ */
 
 #ifndef OPENGLVIEWER_TRANSFORMATION_H
 #define OPENGLVIEWER_TRANSFORMATION_H

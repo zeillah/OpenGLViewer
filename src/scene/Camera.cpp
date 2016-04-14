@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 25.04.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 25.04.2015
+ */
 
 #include "Camera.h"
 

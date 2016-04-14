@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 04.05.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 04.05.15
+ */
 
 #include "Animation.h"
 #include <iostream>

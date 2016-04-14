@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 29.04.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 29.04.15
+ */
 
 #include "MaterialBox.h"
 MaterialBox::MaterialBox()

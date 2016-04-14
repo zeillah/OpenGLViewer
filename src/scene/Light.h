@@ -1,6 +1,8 @@
-//
-// Created by Nicole Schmelzer on 01.05.15.
-//
+/**
+ *  \author    : zeillah
+ *  \version   : 1.0
+ *  \date      : 01.05.2015
+ */
 
 #ifndef OPENGLVIEWER_LIGHT_H
 #define OPENGLVIEWER_LIGHT_H

@@ -1,7 +1,7 @@
 /**
- *  \author    : Nicole Schmelzer
+ *  \author    : zeillah
  *  \version   : 1.0
- *  \date      : 13.04.16
+ *  \date      : 13.04.2016
  */
 
 #ifndef OPENGLVIEWER_IGEOMETRY_H

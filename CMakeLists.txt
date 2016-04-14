@@ -40,3 +40,23 @@ target_link_libraries(${TARGET}
         ${LIBS}
         Qt5::Widgets
         Qt5::OpenGL)
+
+
+set(CMAKE_PREFIX_PATH "../test/mydll.dll")
+
+# searching for library file
+find_library(MYDLL_LIBRARY mydll)
+
+if (MYDLL_LIBRARY)
+    # you may need that if further action in your CMakeLists.txt depends
+    # on detecting your library
+    set(MYDLL_FOUND TRUE)
+
+    # you may need that if you want to conditionally compile some parts
+    # of your code depending on library availability
+    #add_definitions(-DHAVE_LIBSIFTGPU=1)
+
+    # those two, you really need
+    #include_directories(${SIFTGPU_INCLUDE_DIR})
+    set(YOUR_LIBRARIES ${YOUR_LIBRARIES} ${MYDLL_LIBRARY})
+endif ()

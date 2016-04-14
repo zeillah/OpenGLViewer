@@ -1,7 +1,7 @@
 /**
- *  \author    : Nicole Schmelzer
+ *  \author    : zeillah
  *  \version   : 1.0
- *  \date      : 27.06.15
+ *  \date      : 27.06.2015
  */
 
 #ifndef OPENGLVIEWER_SUBDIVIDERDIALOG_H
